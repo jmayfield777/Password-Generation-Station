@@ -47,6 +47,12 @@ function generatePassword() {
     possibleCharacters += specials;
   }
 
+  // Log to make sure possibleCharacters is receiving the password criteria
+  console.log(possibleCharacters);
+
+  // Variable for new password
+  var finalPassword = "";
+
 }
 
 // Add event listener to generate button
