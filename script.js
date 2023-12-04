@@ -24,7 +24,28 @@ function generatePassword() {
   var numbers = confirm("Would you like to include numbers?");
   var specialsPrompt = confirm("Would you like to include special characters?");
 
-  
+  // Check to see if variables are working
+  console.log(passwordLength, lowercasePrompt, uppercasePrompt, numbers, specialsPrompt);
+
+  // Variable for possible characters
+  var possibleCharacters = "";
+
+  // If true push variable contents to possible characters variable
+  if (lowercasePrompt) {
+    possibleCharacters += lowercase;
+  }
+
+  if (uppercasePrompt) {
+    possibleCharacters += uppercase;
+  }
+
+  if (numbers) {
+    possibleCharacters += numbers;
+  }
+
+  if (specials) {
+    possibleCharacters += specials;
+  }
 
 }
 
