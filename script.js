@@ -21,8 +21,14 @@ function generatePassword() {
   // Variables to store password criteria prompts
   var lowercasePrompt = confirm("Would you like to include lowercase characters?");
   var uppercasePrompt = confirm("Would you like to include uppercase characters?");
-  var numbers = confirm("Would you like to include numbers?");
+  var numbersPrompt = confirm("Would you like to include numbers?");
   var specialsPrompt = confirm("Would you like to include special characters?");
+  
+  // Edge case if no criteria is selected
+  if (!lowercasePrompt && !uppercasePrompt && !numbersPrompt && !specialsPrompt) {
+    alert("Please select at least one of the criteria.");
+    return;
+  }
 
   // Check to see if variables are working
   console.log(passwordLength, lowercasePrompt, uppercasePrompt, numbers, specialsPrompt);
