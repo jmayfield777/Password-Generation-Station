@@ -53,6 +53,14 @@ function generatePassword() {
   // Variable for new password
   var finalPassword = "";
 
+  // Iterate through possibeCharacters to generate random password
+  for (i = 0; i < passwordLength; i++) {
+    var randomIndex = Math.floor(Math.random() * possibleCharacters.length);
+    finalPassword += possibleCharacters[randomIndex];
+  }
+
+  return finalPassword;
+
 }
 
 // Add event listener to generate button
