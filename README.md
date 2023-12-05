@@ -4,7 +4,7 @@
 
 This webpage serves as a password generator. When you click "Generate" you will be prompted to chose how many characters, between 8 and 128, that the final password will be. This will then trigger prompts asking the user which password criteria they would like to include in the final output. The final password can include lowercase characters, uppercase characters, numbers, and/or special characters. If no criteria is selected then the function will return and if a number between 8 and 128 is not chosen then the function will return. 
 
-Screenshot - 
+Screenshot - ![Screenshot of password generator](<Screenshot 2023-12-04 at 9.43.04 PM.png>)
 
 ## Installation
 
